@@ -29,7 +29,7 @@ resource "aws_subnet" "private3" {
 }
 
 resource "aws_internet_gateway" "main_igw" {
-  vpc_id   = aws_vpc.vpc_master.id
+  vpc_id   = aws_vpc.vpc.id
   tags = {
     Name = "Master VPC IGW"
   }
