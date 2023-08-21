@@ -4,6 +4,10 @@ resource "aws_vpc" "vpc" {
   enable_dns_hostnames = true
 }
 
+data "aws_availability_zones" "azs" {
+  state    = "available"
+}
+
 resource "aws_subnet" "private1" {
   vpc_id = aws_vpc.vpc.id
   availability_zone = element(data.aws_availability_zones.azs.names, 0)
