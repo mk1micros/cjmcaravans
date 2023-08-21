@@ -8,12 +8,7 @@ variable "region-master" {
   default = "eu-west-2"
 }
 
-variable "region-worker" {
-  type    = string
-  default = "eu-west-1"
-}
-
 variable "public_dns_name" {
   type    = string
-  default = "mk1micros.co.uk."
+  default = "cjmcaravans.co.uk."
 }
