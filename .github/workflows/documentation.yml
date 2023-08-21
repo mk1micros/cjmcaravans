@@ -7,9 +7,6 @@ on:
     paths:
       - 'terraform/modules/**/*.md'
       - '.github/workflows/documentation.yml'
-  merge_group:
-    branches:
-      - main
 
 permissions: {}
 
