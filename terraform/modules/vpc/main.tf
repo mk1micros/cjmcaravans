@@ -25,7 +25,6 @@ resource "aws_subnet" "private3" {
 }
 
 resource "aws_internet_gateway" "main_igw" {
-  provider = aws.region-master
   vpc_id   = aws_vpc.vpc_master.id
   tags = {
     Name = "Master VPC IGW"
