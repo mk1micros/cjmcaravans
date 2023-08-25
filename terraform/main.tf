@@ -5,7 +5,7 @@ module "mainvpc" {
 
 module "web_server" {
   source       = "./modules/ec2_instance"
-  ami          = "ami-0c55b159cbfafe1f0"
+  ami          = "ami-0f3d9639a5674d559"
   instance_type = "t2.micro"
   name         = "CaravanBookingWebServer"
   tags = {
