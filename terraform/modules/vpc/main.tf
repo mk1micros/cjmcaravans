@@ -9,10 +9,13 @@ data "aws_availability_zones" "azs" {
 }
 
 resource "aws_subnet" "private1" {
-  name  = "cjm_private_sub_a"
   vpc_id = aws_vpc.vpc.id
   availability_zone = element(data.aws_availability_zones.azs.names, 0)
   cidr_block = "10.10.1.0/24"
+  tags = {
+    Name = "cjm_private_sub_a"
+  }
+
 }
 
 resource "aws_subnet" "private2" {
