@@ -14,3 +14,9 @@ module "web_server" {
     Project     = "CaravanBooking"
   }
 }
+
+module "dns" {
+  source = "./modules/public_dns"
+  public_dns_name = var.public_dns_name
+  
+}
