@@ -8,7 +8,7 @@ module "web_server" {
   ami          = "ami-0f3d9639a5674d559"
   instance_type = "t2.micro"
   name         = "CaravanBookingWebServer"
-  subnet_id = ${module.vpc.subnet}
+  subnet_id = module.mainvpc.subnet_id
   tags = {
     Environment = "Production"
     Project     = "CaravanBooking"
