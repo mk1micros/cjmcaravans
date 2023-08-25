@@ -1,8 +1,12 @@
 resource "aws_security_group_rule" "example" {
-  type              = "ingress"
-  from_port         = 0
-  to_port           = 65535
-  protocol          = "tcp"
-  cidr_blocks       = [aws_vpc.example.cidr_block]
+  name = var.name
+  vpc_id = var.vpc_id
+
+  ingress {
+  from_port         = var.from_port
+  to_port           = var.to_port
+  protocol          = var.prot
+  cidr_blocks       = var.vpc_cidr
   security_group_id = "sg-123456"
+  }
 }
