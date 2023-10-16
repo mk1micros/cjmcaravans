@@ -26,6 +26,7 @@ No modules.
 | <a name="input_ami"></a> [ami](#input\_ami) | n/a | `any` | n/a | yes |
 | <a name="input_instance_type"></a> [instance\_type](#input\_instance\_type) | n/a | `any` | n/a | yes |
 | <a name="input_name"></a> [name](#input\_name) | n/a | `any` | n/a | yes |
+| <a name="input_subnet_id"></a> [subnet\_id](#input\_subnet\_id) | n/a | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | n/a | `map(string)` | `{}` | no |
 
 ## Outputs
